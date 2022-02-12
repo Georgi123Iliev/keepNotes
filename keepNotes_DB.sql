@@ -39,11 +39,10 @@ user_id int(11) ,
   CONSTRAINT FK_user_note FOREIGN KEY (user_id)
     REFERENCES users(id)
 );
-*/
--- INSERT INTO notes(title,latest_change,note) VALUES ('1234',NOW(),'78553566')
--- select * from notes
+
 INSERT INTO age_groups(age)
 VALUES ('7-12'),('13-18'),('19-30'),('31-50'),('51-70'),('70+')
+*/
 
 
 
