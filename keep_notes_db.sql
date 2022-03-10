@@ -23,7 +23,8 @@ CONSTRAINT FK_city_user FOREIGN KEY (city_id)
 
 CREATE TABLE notes
 (
-title VARCHAR(33) PRIMARY KEY,
+Id INT(111) PRIMARY KEY,    
+title VARCHAR(33),
 creation_date DATETIME DEFAULT NOW(),
 latest_change DATETIME NOT NULL,
 note TEXT NOT NULL,
