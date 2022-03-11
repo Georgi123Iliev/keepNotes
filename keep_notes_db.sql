@@ -12,7 +12,7 @@ age ENUM('7-12','13-18','19-30','31-50','51-70','70+')
 CREATE TABLE users(
 id INT(11) PRIMARY KEY AUTO_INCREMENT,
 username VARCHAR(25) NOT NULL UNIQUE ,
-password VARCHAR(25) NOT NULL ,
+password VARCHAR(100) NOT NULL ,
 city_id INT(11) NOT NULL,
 CONSTRAINT FK_city_user FOREIGN KEY (city_id)
     REFERENCES cities(id),
